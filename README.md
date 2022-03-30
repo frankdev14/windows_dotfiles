@@ -1,14 +1,73 @@
 # General configs for windows setup
 
-Before we start customizing, we will have to configure the system.
 # Install the development Software
-## 1 - installing Software
+## 1 - Installing Software
+Before starting installing software, be sure that you update the system, remove trash apps and software. Clean the system, change privacy settings and customize the theme.
+
+Now you can starting installation of the software:
+* This software is the basic for my daily uses:
+  ```
+  winget install Nvidia.GeForceExperience; winget install CCleaner --source winget; winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Brave --source winget; winget install Notion.Notion; winget install Microsoft.VC++2015-2022Redist-x86; winget install Microsoft.VC++2015-2022Redist-x64; winget install Microsoft.VC++2013Redist-x86; winget install Microsoft.VC++2013Redist-x64; winget install Microsoft.dotnetRuntime.6-x64; winget install Microsoft.ASPNetCore.6-x64; winget install Microsoft.dotnet; winget install Microsoft.dotNetFramework; winget install Microsoft.dotnetRuntime.5-x86; winget install Microsoft.dotnetRuntime.5-x64; winget install Microsoft.dotnetRuntime.3-x64; winget install Microsoft.dotnetRuntime.3-x86; winget install Google.Chrome; winget install Mozilla.Firefox; winget install Nvidia.CUDA; winget install 7zip --source winget; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install KeeWeb.KeeWeb;
+  ```
+
+* Install the development software 
+  ```
+  winget install Microsoft.VisualStudioCode; winget install Git.Git; winget install GitHub.GitLFS; winget install Microsoft.GitCredentialManagerCore; winget install GitHub.GitHubDesktop; winget install Amazon.AWSCLI; winget install SumatraPDF --source winget; winget install Meld.Meld; winget install Microsoft.GitCredentialManagerCore;
+  ```
+
+* Install from appstore: itunes, msi center and ambiance,
+
+* Open a terminal in admin mode, and launch:
+  ```
+  wsl --install
+  ```
+
+  This will install all necessary for WSL machines, after the installation finish, reboot the system.
+
+* Now configurate SSH machine certification. For this you need install openssh in the additional features in the configuration app. Then run the next code blocks.
+
+  Launch terminal in admin mode and launch:
+  ```
+  Get-Service -Name sshd | Set-Service -StartupType Automatic
+  Start-Service sshd
+  ```
+
+  Then in normal mode launch:
+  ```
+  ssh-keygen -t rsa -C "youremail"
+  ```
+
+  Run as admin:
+  ```
+  Get-Service ssh-agent | Set-Service -StartupType Manual
+  Start-Service ssh-agent
+  Get-Service ssh-agent
+  ```
+
+  And finally add your ssh key, this in normal mode:
+  ```
+  ssh-add ~\.ssh\id_rsa
+  ```
+
+* For deploy your ssh key go to github, and add the public key into ssh and gpg management. If you did it right, run: ssh -T git@github.com
+
+This is the basic software, after this you can install additional software as pycharm, VStudio Community, etc.
+
+___
+
 ## 2 - Configure Software
+* Clean the system with ccleaner.
+* Now starting adding accounts to the main web browser (Brave in my case).
+* Open MSI Center and update the drivers and reboot.
+* Starts Nvidia GeforceExperience and update GPU drivers (3080 in my case).
+* Finally config nvidia panel and done.
+___
 # Customize the prompt
 ## 1 - Clone the repository
 When you clone the repo, you'll have 2 files. The user_profile and a json, this files contain the powershell config and the oh my posh theme.
 
 Then create a folder into your home folder, called .config. Then copy the powershell config and leave it inside .config.
+___
 
 ## 2 - Install requirements for config
 * First should download Nerd Fonts, and install the Windows Compatible. The font is your choice, I pref Hack NF.
