@@ -12,7 +12,7 @@ Now you can starting installation of the software:
 
 * Install the development software 
   ```
-  winget install Microsoft.VisualStudioCode; winget install Git.Git; winget install GitHub.GitLFS; winget install Microsoft.GitCredentialManagerCore; winget install GitHub.GitHubDesktop; winget install Amazon.AWSCLI; winget install SumatraPDF --source winget; winget install Meld.Meld; winget install Microsoft.GitCredentialManagerCore;
+  winget install Microsoft.VisualStudioCode; winget install Git.Git; winget install GitHub.GitLFS; winget install Microsoft.GitCredentialManagerCore; winget install GitHub.GitHubDesktop; winget install Amazon.AWSCLI; winget install WinMerge.WinMerge; winget install Microsoft.GitCredentialManagerCore;
   ```
 
 * Install from appstore: itunes, msi center and ambiance,
