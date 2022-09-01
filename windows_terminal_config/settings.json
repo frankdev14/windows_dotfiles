@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -35,7 +36,7 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.62,
+            "opacity": 70,
             "colorScheme": "One Half Dark",
             "font": 
             {
@@ -58,7 +59,7 @@
                 "name": "S\u00edmbolo del sistema"
             },
             {
-                "acrylicOpacity": 0.73999999999999999,
+                "opacity": 70,
                 "colorScheme": "cyberpunkasf",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": true,
@@ -79,7 +80,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "acrylicOpacity": 0.73999999999999999,
+                "opacity": 70,
                 "colorScheme": "cyberpunkasf",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": true,
@@ -87,13 +88,13 @@
                 {
                     "size": 14
                 },
-                "guid": "{60c3e313-8e1a-58f6-8175-3650c2bd2b26}",
+                "guid": "{f9ceaf27-504c-58d7-927c-d1d6a7ac7d3c}",
                 "hidden": false,
-                "name": "Ubuntu 22.04 LTS",
+                "name": "Ubuntu 22.04.1 LTS",
                 "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
             },
             {
-                "acrylicOpacity": 0.73999999999999999,
+                "opacity": 70,
                 "colorScheme": "cyberpunkasf",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": true,
