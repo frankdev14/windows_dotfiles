@@ -1,11 +1,10 @@
 # Prompt
 Import-Module posh-git
-Import-Module oh-my-posh
 
 # Load Prompt config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'cyber.omp.json'
-oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
+$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'spaceship.omp.json'
+oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 # Icons
 Import-Module -Name Terminal-Icons
