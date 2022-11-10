@@ -7,7 +7,7 @@ Before starting installing software, be sure that you update the system, remove 
 Now you can starting installation of the software:
 * This software is the basic for my daily uses:
   ```
-  winget install Nvidia.GeForceExperience; winget install CCleaner --source winget; winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Brave --source winget; winget install Notion.Notion; winget install Microsoft.VC++2015-2022Redist-x86; winget install Microsoft.VC++2015-2022Redist-x64; winget install Microsoft.VC++2013Redist-x86; winget install Microsoft.VC++2013Redist-x64; winget install Microsoft.DotNet.Runtime.6; winget install Microsoft.DotNet.AspNetCore.6; winget install Microsoft.DotNet.SDK.6; winget install Microsoft.DotNet.Runtime.5; winget install Microsoft.DotNet.Runtime.3_1; winget install Google.Chrome; winget install Mozilla.Firefox; winget install Nvidia.CUDA; winget install 7zip --source winget; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install KeePassXCTeam.KeePassXC; winget install NZXT.CAM; winget install SlackTechnologies.Slack;
+  winget install Nvidia.GeForceExperience; winget install CCleaner --source winget; winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Notion.Notion; winget install Microsoft.VC++2015-2022Redist-x86; winget install Microsoft.VC++2015-2022Redist-x64; winget install Microsoft.VC++2013Redist-x86; winget install Microsoft.VC++2013Redist-x64; winget install Microsoft.DotNet.Runtime.6; winget install Microsoft.DotNet.AspNetCore.6; winget install Microsoft.DotNet.SDK.6; winget install Microsoft.DotNet.Runtime.5; winget install Microsoft.DotNet.Runtime.3_1; winget install Nvidia.CUDA; winget install 7zip --source winget; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install KeePassXCTeam.KeePassXC; winget install NZXT.CAM; winget install SlackTechnologies.Slack;
   ```
 
 * Install the development software 
@@ -93,7 +93,7 @@ ___
 * Install Oh My Posh
   ```
   Install-Module posh-git -Scope CurrentUser -Force
-  Install-Module oh-my-posh -Scope CurrentUser -Force
+  winget install JanDeDobbeleer.OhMyPosh -s winget
   ```
 
 * Instal Terminal Icons
