@@ -1,9 +1,10 @@
 # Prompt
 Import-Module posh-git
+$env:VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Load Prompt config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'spaceship.omp.json'
+$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'unnamed.omp.json'
 oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 # Icons
