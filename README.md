@@ -7,13 +7,13 @@ Before starting installing software, be sure that you update the system, remove 
 Now you can starting installation of the software:
 * This software is the basic for my daily uses:
   ```
-    winget install Nvidia.GeForceExperience; winget install CCleaner --source winget; winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Microsoft.VCRedist.2015+.x86; winget install Microsoft.VCRedist.2015+.x64; winget install Microsoft.VCRedist.2013.x86; winget install Microsoft.VCRedist.2013.x64; winget install Microsoft.VCRedist.2012.x86; winget install Microsoft.VCRedist.2012.x64; winget install Microsoft.DotNet.Runtime.6; winget install Microsoft.DotNet.AspNetCore.6; winget install Microsoft.DotNet.SDK.6; winget install Microsoft.DotNet.Runtime.5; winget install Microsoft.DotNet.Runtime.3_1; winget install 7zip --source winget; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install KeeWeb; winget install NZXT.CAM; winget install Logitech.GHUB; winget install SteelSeries.GG;
+    winget install Nvidia.GeForceExperience; winget install Piriform.CCleaner; winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Microsoft.VCRedist.2015+.x86; winget install Microsoft.VCRedist.2015+.x64; winget install Microsoft.VCRedist.2013.x86; winget install Microsoft.VCRedist.2013.x64; winget install Microsoft.VCRedist.2012.x86; winget install Microsoft.VCRedist.2012.x64; winget install Microsoft.DotNet.Runtime.6; winget install Microsoft.DotNet.AspNetCore.6; winget install Microsoft.DotNet.SDK.6; winget install Microsoft.DotNet.Runtime.5; winget install Microsoft.DotNet.Runtime.3_1; winget install 7zip --source winget; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install KeeWeb; winget install NZXT.CAM; winget install Logitech.GHUB; winget install SteelSeries.GG; winget install Brave.Brave
 
   ```
 
 * Install the development software 
   ```
-  winget install Microsoft.VisualStudioCode; winget install Git.Git; winget install GitHub.GitLFS; winget install Microsoft.GitCredentialManagerCore; winget install GitHub.GitHubDesktop; winget install Amazon.AWSCLI; winget install WinMerge.WinMerge; winget install Microsoft.GitCredentialManagerCore;
+  winget install Microsoft.VisualStudioCode; winget install Git.Git; winget install GitHub.GitLFS; winget install Microsoft.GitCredentialManagerCore; winget install GitHub.GitHubDesktop; winget install Amazon.AWSCLI; winget install WinMerge.WinMerge;
   ```
 
 * Install from appstore: itunes, msi center and ambiance,

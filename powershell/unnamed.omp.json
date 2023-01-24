@@ -69,19 +69,17 @@
             "branch_identical_icon": "\uf444",
             "branch_gone_icon": "\uf655"
           },
-          "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <transparent>\ue0b1</> <#121318>\uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <transparent>\ue0b1</> <#121318>\uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <transparent>\ue0b1</> <#121318>\uf692 {{ .StashCount }}</>{{ end }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "git"
         },
         {
           "background": "#5EADF2",
           "foreground": "#4e4e4e",
-          "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": " {{if .Version}}\uf487 {{.Version}}{{end}} ",
-          "trailing_diamond": "\ue0b0",
           "type": "project"
         },
         {
@@ -90,19 +88,17 @@
           "properties": {
             "fetch_version": false
           },
-          "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ .Full }}{{ end }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "python"
         },
         {
           "background": "#7FD5EA",
           "foreground": "#4e4e4e",
-          "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": " \ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "go"
         }
       ],
