@@ -117,7 +117,12 @@ ___
   scoop install fzf
   Install-Module -Name PSFzf -Scope CurrentUser -Force
   ```
-
+* Install neovim configuration and setup
+  ```
+  scoop install ripgrep
+  scoop install mingw
+  git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
+  ```
 * Edit the host profile to use our profile.
   ```
   nvim $PROFILE.CurrentUserCurrentHost
