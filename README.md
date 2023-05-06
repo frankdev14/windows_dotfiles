@@ -131,4 +131,5 @@ ___
   Add the following line to the last edit:
   ```
   . $env:USERPROFILE\.config\powershell\user_profile.ps1
+  $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
   ```
