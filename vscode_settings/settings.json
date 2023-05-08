@@ -13,9 +13,9 @@
 
     // Editor and workspaces
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'FiraCode NF', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
     "editor.codeLens": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.dragAndDrop": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
@@ -31,7 +31,7 @@
     "editor.formatOnSave": false,
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.tabSize": 4,
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
@@ -68,10 +68,11 @@
     "python.terminal.activateEnvironment": true,
     "python.languageServer": "Pylance",
     "python.poetryPath": "poetry",
+    "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"},
 
     // Terminal
     "terminal.integrated.enableBell": true,
-    "terminal.integrated.fontFamily": "Hack NF",
+    "terminal.integrated.fontFamily": "ProFontWindows Nerd Font Mono",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
