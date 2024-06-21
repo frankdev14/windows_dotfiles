@@ -99,7 +99,7 @@
             "always_enabled": true
           },
           "style": "powerline",
-          "template": "\u279c ",
+          "template": "\ue285 ",
           "type": "exit"
         }
       ],
