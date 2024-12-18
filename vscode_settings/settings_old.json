@@ -1,0 +1,85 @@
+{
+    // Theme
+    "workbench.iconTheme": "symbols",
+    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.tips.enabled": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "breadcrumbs.enabled": false,
+
+    // Editor and workspaces
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.codeLens": true,
+    "editor.fontSize": 18,
+    "editor.dragAndDrop": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "selection",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.tabSize": 4,
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "on",
+    "editor.trimAutoWhitespace": true,
+
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "**/.idea": true,
+        "**/.venv": true
+    },
+
+    // Git
+    "git.autofetch": true,
+    "git.autorefresh": true,
+    "git.decorations.enabled": true,
+    "git.confirmSync": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.mode.statusBar.enabled": false,
+
+    // Languages
+    "python.terminal.activateEnvironment": true,
+    "python.languageServer": "Pylance",
+    "python.poetryPath": "poetry",
+    "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"},
+
+    // Terminal
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontFamily": "ProFontWindows Nerd Font Mono",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
+
+    // Others
+    "vscode-mysql.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "aws.telemetry": false,
+    "gitlens.telemetry.enabled": false
+}
