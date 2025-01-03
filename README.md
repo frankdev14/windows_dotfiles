@@ -115,7 +115,7 @@ ___
 
 * Install PSReadline
   ```
-  Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+  Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
   ```
 
 * Install fzf
