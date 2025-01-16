@@ -19,7 +19,10 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "selection",
     "editor.bracketPairColorization.enabled": true,
-
+    "editor.rulers": [
+        80,
+        120
+    ],
     "editor.formatOnPaste": false,
     "editor.formatOnSave": false,
     "editor.cursorStyle": "line",
@@ -54,6 +57,11 @@
     "git.blame.editorDecoration.enabled": true,
     "git.blame.statusBarItem.enabled": true,
 
+    // Languages
+    "python.terminal.activateEnvironment": true,
+    "python.languageServer": "Pylance",
+    "python.poetryPath": "poetry",
+    "terminal.integrated.env.windows": {"PYTHONPATH":"${workspaceFolder}"},
 
     // Terminal
     "terminal.integrated.fontFamily": "ProFontWindows Nerd Font Mono",
@@ -64,6 +72,6 @@
 
     // Others
     "telemetry.telemetryLevel": "off",
-    "dotnet.server.useOmnisharp": true,
-    "godotFiles.documentation.webview.keepTabs": true
+    "database-client.telemetry.usesOnlineServices": false,
+    "python.analysis.reportExtraTelemetry": false
 }
