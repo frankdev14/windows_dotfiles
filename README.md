@@ -66,6 +66,19 @@ ___
   ssh-add ~\.ssh\id_rsa
   ```
 
+  In caso of use ssh as git, then we need to add this need add this new var to our gitconfig:
+  ```
+  git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
+  ```
+
+  Then create a config file into .ssh that contains this text:
+  ```
+    Host github.com
+      HostName github.com
+      User git
+      IdentityFile ~/.ssh/id_rsa
+  ```
+
 * For deploy your ssh key go to github, and add the public key into ssh and gpg management. If you did it right, run: ssh -T git@github.com
 
 * Disable AWS telemetry: setx AWS_CLI_TELEMETRY_DISABLED 1
@@ -196,17 +209,24 @@ ___
       smudge = git-lfs smudge -- %f
       process = git-lfs filter-process
       required = true
+
     [user]
-      name = yourusername
-      email = youremail
+      name = username
+      email = mail
+
     [core]
       editor = code --wait
+      sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+
     [diff]
       tool = vscode
+
     [difftool "vscode"]
       cmd = code --wait --diff $LOCAL $REMOTE
+
     [merge]
       tool = vscode
+
     [mergetool "vscode"]
       cmd = code --wait $MERGED
   ```
