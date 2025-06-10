@@ -148,36 +148,11 @@ ___
   ```
 ## 5 - Python version manager and lib manager
 
-* First of all, you should install pyenv as version manager:
+* UV the new future of package envs python
+
+  I start using uv since 3 months ago and i can say that is the best package environment. This software is written in rust and is x10 fast than poetry or something. UV includes pyenv, poetry and version locker, so its a all in one.
+  https://docs.astral.sh/uv/guides/install-python/
   
-  ```
-    Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
-  ```
-
-* If you we an **UnauthorizedAccess**, then run this follow command on powershell as admin and rerun the command above:
-
-  ```
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-  ```
-  Now reopen terminal, and if you exec pyenv, should get a list with all commands availible.
-</br>
-  Exec: pyenv install "your prefer python version", without quotes and when it finish use pyenv rehash.
-</br>
-* Next, setup a global python version with pyenv global "your python version" and remove python.exe aliases on windows settings
-
-* Install pipx for use it in some apps, exec the commands 1 by 1:
-  ```
-    scoop install pipx
-    pipx ensurepath
-    python -m pip install --user pip
-  ```
-
-* Is time for install poetry dependency manager:
-  ```
-    pipx install poetry
-  ```
-
-  When finish, you can exec poetry on terminal and we will use this for libs installation, virtualenvs, and more
 
 # LLMS and AI installation
 ## 1 - Ollama installation and models.
