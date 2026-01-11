@@ -1,0 +1,38 @@
+[core]
+    editor = code --wait
+    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+
+[user]
+	name = username
+	email = email
+	signingkey = C:/Users/YOURUSERNAME/.ssh/id_ed25519.pub
+
+[init]
+	defaultBranch = main
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

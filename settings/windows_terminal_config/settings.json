@@ -1,79 +1,54 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878"
-        }
-    ],
+    "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "keybindings": 
-    [
+    "keybindings": [
         {
-            "id": "User.copy.644BA8F2",
+            "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
         },
         {
-            "id": "User.paste",
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
             "keys": "ctrl+v"
         },
         {
-            "id": "User.splitPane.A6751878",
+            "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "One Half Dark",
-            "font": 
-            {
+            "font": {
                 "face": "Hack Nerd Font Mono"
             },
             "opacity": 100,
             "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Windows PowerShell"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "S\u00edmbolo del sistema"
+                "name": "Command Prompt"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -82,56 +57,39 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "source": "Git",
-                "cursorShape": "bar",
+                "colorScheme": "cyberpunkasf",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
+                "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "ProFontWindows Nerd Font Mono",
+                "font": {
+                    "face": "Hack Nerd Font Mono",
                     "size": 20
                 },
-                "colorScheme": "cyberpunkasf",
+                "useAcrylic": true,
                 "opacity": 80,
-                "useAcrylic": true
-            },
-            {
-                "colorScheme": "cyberpunkasf",
-                "commandline": "\"C:\\Users\\fjolm\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\" --NoLogo",
-                "cursorShape": "bar",
-                "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "ProFontWindows Nerd Font Mono",
-                    "size": 20
-                },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 80,
-                "source": "Windows.Terminal.PowershellCore",
-                "useAcrylic": true
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "colorScheme": "cyberpunkasf",
                 "cursorShape": "filledBox",
-                "experimental.retroTerminalEffect": true,
-                "font": 
-                {
-                    "size": 14
+                "experimental.retroTerminalEffect": false,
+                "font": {
+                    "face": "Hack Nerd Font Mono",
+                    "size": 20
                 },
-                "guid": "{b5d9fa52-d56b-5bc5-8e86-f1791ea8394a}",
+                "useAcrylic": true,
+                "opacity": 80,
+                "guid": "{4c40f5f5-a687-58d8-afe4-54147a390462}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "opacity": 70,
                 "source": "Microsoft.WSL"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#131313",
             "black": "#1F1F1F",
