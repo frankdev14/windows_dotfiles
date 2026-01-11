@@ -275,18 +275,11 @@ ___
 ___
 
 # Other Tweaks
-## 1 - Ollama installation and models.
-* I like to run my own models locally, so I use Ollama, which allows me to install models such as Llama3, Nemotron, or Deepseek. On Windows and Mac, they have created a ChatGPT-style interface that allows you to talk to the different models.
-
-* Ollama installation url: https://ollama.com/download
-
-* Restart terminal and run: ollama run llama3, this will pull the llama3 AI model and starts. Now exec /bye for exit the model.
-
-## 2 - Python version manager and lib manager
+## 1 - Python version manager and lib manager
 
 * We have already installed UV with scoop, this Python manager is practically an all-in-one solution. You can install any version of Python, create virtual environments, install packages while blocking dependencies, etc. It is very comprehensive and highly recommended. I am including the documentation again so you have it handy. https://docs.astral.sh/uv/guides/install-python/
   
-## 3 - WSL Ubuntu Setup
+## 2 - WSL Ubuntu Setup
 
 * When you installed the WSL distribution, you had to create a username and password. Now it's time to set up the environment properly. To do this, we will start the Ubuntu console and run the following commands:
   ```
