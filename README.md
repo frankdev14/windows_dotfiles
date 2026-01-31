@@ -47,7 +47,7 @@ ___
   ```
   Restart and continue.
 
-* For install a wsl distribution, use this command:
+* For install a wsl distribution, use this command and change Ubuntu for your prefer wsl distro:
   ```
     wsl --install -d Ubuntu
   ```
