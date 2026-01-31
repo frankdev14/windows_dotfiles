@@ -62,7 +62,7 @@ ___
 
 * We are also going to install our own program manager for users, which, combined with winget, will give us access to much more software. People prefer Chocolatey, but in my case, I prefer Scoop because it is less intrusive. First of all, we will run this command in a terminal in administrator mode.
   ```
-    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
   ```
 
 * Once executed and permissions granted for scoop, we proceed to install it with the following command:
@@ -334,3 +334,4 @@ ___
 * We run (explorer.exe .) And finally, to finish configuring WSL, we copy the contents of the dotfiles_wsl folder into the open window and review the configuration to change the placeholders for these settings.
 
 *  **With that, we have completed a fresh installation of Windows 11! Restart the terminal and you will have everything ready.**
+
