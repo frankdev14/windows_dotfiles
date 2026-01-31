@@ -21,7 +21,7 @@ NOTE: I will also leave all configurations as dotfiles so that they remain as ex
      winget install Spotify.Spotify --force; winget install VideoLAN.VLC; winget install Microsoft.VCRedist.2015+.x86; winget install Microsoft.VCRedist.2015+.x64; winget install Microsoft.VCRedist.2013.x86; winget install Microsoft.VCRedist.2013.x64; winget install Microsoft.VCRedist.2012.x86; winget install Microsoft.VCRedist.2012.x64; winget install Microsoft.DotNet.SDK.8; winget install Microsoft.DotNet.AspNetCore.8; winget install Microsoft.DotNet.Runtime.8; winget install Microsoft.DotNet.Runtime.6; winget install Microsoft.DotNet.Runtime.5; winget install Microsoft.DotNet.Runtime.3_1; winget install Valve.Steam --source winget; winget install Discord.Discord --source winget; winget install NZXT.CAM; winget install Logitech.GHUB; winget install Brave.Brave; winget install Bitwarden.Bitwarden; winget install splode.pomotroid; winget install BleachBit.BleachBit; winget install icrosoft.DotNet.SDK.10; winget install Microsoft.PowerToys;
   ```
   
-* Apps that I use from Microsoft Store: Ambiance
+* Apps that I use from Microsoft Store: Ambiance & whatsapp
 ___
 
 ## 2 - Configure Software
@@ -47,7 +47,7 @@ ___
   ```
   Restart and continue.
 
-* For install a wsl distribution, use this command and change Ubuntu for your prefer wsl distro:
+* For install a wsl distribution, use this command:
   ```
     wsl --install -d Ubuntu
   ```
