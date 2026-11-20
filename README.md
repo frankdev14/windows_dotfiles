@@ -5,7 +5,7 @@ I chose this environment because of the number of problems I was having with Lin
 
 That's why I chose a hybrid environment thanks to WSL.
 
-NOTE: I will also leave all configurations as dotfiles so that they remain as examples. test
+NOTE: I will also leave all configurations as dotfiles so that they remain as examples.
 
 # Basic Setup
 ## 1 - Installing Software on Fresh install
